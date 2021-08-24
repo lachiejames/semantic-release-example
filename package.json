@@ -1,0 +1,34 @@
+{
+    "name": "semantic-release-example",
+    "version": "1.0.0",
+    "author": "Lachie James",
+    "license": "MIT",
+    "main": "lib/index.js",
+    "dependencies": {},
+    "devDependencies": {
+        "@types/jest": "26.0.24",
+        "@types/node": "15.0.2",
+        "@typescript-eslint/eslint-plugin": "4.28.5",
+        "@typescript-eslint/parser": "4.28.5",
+        "eslint": "7.32.0",
+        "eslint-plugin-import": "2.23.4",
+        "find-root": "1.1.0",
+        "jest": "27.0.6",
+        "prettier": "2.3.2",
+        "semantic-release": "17.4.4",
+        "ts-jest": "27.0.4",
+        "typescript": "4.3.5"
+    },
+    "scripts": {
+        "build": "tsc",
+        "format": "prettier --write . & eslint . --fix",
+        "start": "node .",
+        "test": "jest --coverage --detectOpenHandles --runInBand"
+    },
+    "directories": {
+        "lib": "lib"
+    },
+    "files": [
+        "lib/**"
+    ]
+}
